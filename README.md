@@ -15,8 +15,10 @@ It uses a hybrid approach, so a decision is never just a yes or no:
    - requests for passwords, logins, OTPs or verification codes
    - financial and payment wording
    - account threats (suspended, locked, disabled)
-   - url links 
+   - links (http, www, "click here", short links like bit.ly)
+   - mentions of risky file types (.zip, .exe, .js and others)
    - excessive punctuation and exclamation marks
+     
 4. **Final risk score** combines the model probability with the rule-based indicators, and lowers it slightly for normal business wording to cut false alarms. A score of 50% or more is labelled phishing.
 
 The app has three tabs: **Email Analysis**, **Model Testing** (metrics and confusion matrix) and **System Explanation**.
